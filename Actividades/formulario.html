@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div><img src="https://via.placeholder.com/100x100" alt="imagen"></div>
+        <h1>Blog</h1>
+        <ul>
+            <li>Home</li>
+            <li>Blogs</li>
+            <li>Contacto</li>
+        </ul>
+    </header>
+    <main>
+        <section>
+            <h2>Titulo del Post 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Quam vel, fuga tempora necessitatibus atque illum eum adipisci 
+                vitae deleniti consequuntur exercitationem esse similique 
+                enim maiores beatae. Distinctio sed illum porro!
+            </p>
+        </section>
+        <section>
+            <h2>Titulo del Post 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Quam vel, fuga tempora necessitatibus atque illum eum adipisci 
+                vitae deleniti consequuntur exercitationem esse similique 
+                enim maiores beatae. Distinctio sed illum porro!
+            </p>
+        </section>
+    </main>
+    <section>
+        <header><h2>Formulario</h2></header>
+        <form action="" method="">
+            <fieldset>
+                <legend><h2><em>Información Personal</em></h2></legend>
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Antonia" tabindex="1" required>
+                </div><br>
+                <div>
+                    <label for="apellido">Apellidos</label>
+                    <input type="text" id="apellido" name="apellido" placeholder="Nandar Ramos" tabindex="2" required>
+                </div><br>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="ejemplo@gmail.com" tabindex="3" required>
+                </div><br>
+                <div>
+                    <label for="pais">Pais de origen:</label>
+                    <select name="pais" id="pais" tabindex="4" required>
+                        <option value="">Selecciona tu país de procedencia</option>
+                        <option value="arg" id="argentina">Argentina</option>
+                        <option value="col" id="colombia">Colombia</option>
+                    </select>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend><h2><em>Información adicional</em></h2></legend>
+                <div>
+                   <p> ¿A qué carreras deseas inscribirte?</p>
+                    <input type="radio" name="carrera" value="ux/ui" id="ux/ui" required tabindex="5">
+                    <label for="ux/ui">UX/UI </label><br>
+    
+                    <input type="radio" name="carrera" value="data_science" id="data_science">
+                    <label for="data_science">Data science</label><br>
+    
+                    <input type="radio" name="carrera" value="desarrollo_web_full_stack" id="desarrollo_web_full_stack">
+                    <label for="desarrollo_web_full_stack">Desarrollo Web Full Stack </label><br>
+    
+                    <input type="radio" name="carrera" value="frontend_avanzado" id="frontend_avanzado">
+                    <label for="frontend_avanzado">FrontEnd Avanzado</label><br>
+                </div><br>
+                <div>
+                    <p>Modalidad</p>
+                    <input type="radio" name="modalidad" id="presencial" value="presencial">
+                    <label for="modalidad">Presencial</label><br>
+
+                    <input type="radio" name="modalidad" id="modalidad" value="virtual">
+                    <label for="modalidad">Virtual</label><br>
+                </div><br>
+                <div> 
+                    <label for="trabajo">Estoy trabajando</label>
+                    <input type="checkbox" name="trabajo" id="trabajo" value="trabajo" required>
+                </div><br>
+                <div>
+                    <label for="telefono">Telefono de contácto:</label>
+                    <input type="text" name="telefono" id="telefono" maxlength="10">
+                </div><br>
+                <div>
+                    Descripcion Personal: <br> 
+                    <textarea name="descripcion" id="descripcion_personal" cols="50" rows="6" placeholder="Escribe una breve descripcion sobre ti" maxlength="300"></textarea>    
+                </div>
+            </fieldset><br>
+            <div>
+                <input type="submit" value="Enviar solicitud">
+                <input type="reset" value="Limpiar">
+            </div><br>
+        </form>
+    </section>
+</body>    
+</html>

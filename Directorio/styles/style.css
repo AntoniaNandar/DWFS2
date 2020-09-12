@@ -1,17 +1,150 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: 'Questrial', sans-serif;
 }
 
-body {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#FFC107), to(#CC0033));
-  background-image: linear-gradient(to bottom right, #FFC107, #CC0033);
-  background-attachment: fixed;
-}
-
+/*header*/
 header {
-  background: #ffffff;
-  -webkit-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-          box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  background: none;
+}
+
+#btn-menu {
+  display: none;
+}
+
+header label {
+  display: none;
+  padding: 10px;
+  border-radius: 50%;
+  /*border: 1px solid blue;*/
+  width: 15px;
+  text-align: center;
+  color: #faf3cf;
+}
+
+header label:hover {
+  cursor: pointer;
+  /*background: $red;*/
+}
+
+.menu ul {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+a {
+  padding: 15px  20px;
+  display: block;
+  color: wheat;
+  text-decoration: none;
+}
+
+.menu li {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border-right: 1px solid white;
+}
+
+.menu li:hover {
+  background: greenyellow;
+}
+
+.firma {
+  width: 26vmin;
+  height: 14vmin;
+}
+
+.cabecera {
+  height: 14vmin;
+}
+
+@media screen and (max-width: 1400px) {
+  h1 {
+    color: orange;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    color: red;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #user {
+    color: #faf3cf;
+  }
+  h1 {
+    color: violet;
+  }
+  /*Menu*/
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 0 10px;
+    height: 70vh;
+    background: url(../images/programador2.jpg);
+  }
+  header label {
+    display: block;
+  }
+  .menu {
+    position: absolute;
+    background: rosybrown;
+    width: 70%;
+    margin-left: -80%;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .menu ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .menu li {
+    border-top: 1px solid white;
+  }
+  #btn-menu:checked ~ .menu {
+    margin: 0 -4%;
+  }
+  #btn-menu:checked ~ label {
+    background: gray;
+  }
+  /*backgrund*/
+  .foto {
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 50vw;
+    height: 25vh;
+    border-radius: 50%;
+    border: 5px solid white;
+  }
 }
 /*# sourceMappingURL=style.css.map */

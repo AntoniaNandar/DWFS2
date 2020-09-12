@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+/*headeer*/
+header {
+    width: 100%;
+    display: flex;
+    padding: 20px 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+header > nav > ul {
+    display:flex;
+    list-style: none;
+}
+nav > ul > li{
+    padding: 20px;
+}
+
+/*aside y main*/
+aside {
+    width: 20%;
+}
+main {
+    flex-basis: calc(100% - 20%);
+}

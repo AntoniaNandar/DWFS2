@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 10px;
+    font-family: 'Questrial', sans-serif;
+}
+img {
+    width: 200px;
+    height: 200px;
+}
+
+article {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;  
+}
+main {
+    display: flex;
+}
+header {
+    background-color: teal;
+    color: white;
+}

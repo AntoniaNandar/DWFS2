@@ -12,26 +12,30 @@
 
 <body>
     <header>
+        <div class="conteiner">
         <input type="checkbox" id="btn-menu">
-        <label for="btn-menu"><i class="fas fa-bars fa-lg"></i></label>
+        <label for="btn-menu"><i class="fas fa-bars" id="barra"></i></label>
 
         <nav class="menu">
             <ul>
-                <li>Contáctame</li>
-                <li>Proyectos</li>
-                <li>Proyecciones</li>
-                <li>Redes sociales</li>
+                <li><a href="">Contáctame</a></li>
+                <li><a href=""> Proyectos</a></li>
+                <li> <a href="">Proyecciones</a></li>
+                <li><a href="">Redes sociales</a></li>
             </ul>
         </nav>
+        </div>
                
         <div class="cabecera">
             <img src="../Directorio/images/firma.jpg" alt="firma" class="firma">
         </div>
-
         <div> 
             <i class="fas fa-user" id="user"></i>
         </div>
-       
+        <div>            
+            <img src="../Directorio/images/Liga.jpg" alt="foto" class="foto">
+        </div>    
+        
     </header>
     <main>
 
@@ -65,10 +69,11 @@
                 <label for="telefono">Telefono de contácto:</label>
                 <input type="text" name="telefono" id="telefono" maxlength="10">
             </div>
-            <div>
+            <div class="textarea">
                 Descripcion Personal: <br>
-                <textarea name="descripcion" id="descripcion_personal" cols="50" rows="6"
-                    placeholder="Escribe una breve descripcion sobre ti" maxlength="300"></textarea>
+                <textarea name="descripcion" id="descripcion_personal" cols="30" rows="6"
+                    placeholder="Escribe una breve descripcion sobre ti" maxlength="300">
+                </textarea>
             </div>
             <div>
                 <input type="submit" value="Enviar solicitud">

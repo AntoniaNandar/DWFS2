@@ -1,12 +1,153 @@
+$white: #faf3cf;
+$red: #d23715;
+
 * {
     padding: 0;
     margin: 0;
+    font-family: 'Questrial', sans-serif;
 }
-body {
-    background-image: linear-gradient(to bottom right, #FFC107, #CC0033 );
-    background-attachment: fixed;
-}
+
+
+/*header*/
 header {
-    background: #ffffff;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-}    
+    width: 100%;
+    background: none;
+}
+
+#btn-menu {
+    display: none;
+}
+
+header label {
+    display: none;
+    padding: 10px;
+    border-radius: 50%;
+    /*border: 1px solid blue;*/
+    width: 15px;
+    text-align: center;
+    color: $white;
+}
+
+header label:hover {
+    cursor: pointer;
+    /*background: $red;*/
+
+}
+
+.menu ul {
+    padding: 0;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    flex-flow: row wrap;
+}
+
+a {
+    padding: 15px  20px;
+    display: block;
+    color: wheat;
+    text-decoration: none;
+}
+
+.menu li {
+    flex-grow: 1;
+    border-right: 1px solid white;
+}
+
+.menu li:hover {
+    background: greenyellow;
+}
+
+.firma {
+    width: 26vmin;
+    height: 14vmin;
+}
+
+.cabecera {
+    height: 14vmin;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1400px) {
+    h1 {
+        color: orange;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    h1 {
+        color: red;
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width: 320px) {
+    #user {
+        color: $white;
+    }
+    
+    h1 {
+        color: violet;
+    }    
+    
+    /*Menu*/
+    header {
+        display: flex;
+        align-items: center;
+        align-content: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 0 10px;
+        height: 70vh;
+        background: url(../images/programador2.jpg);
+    }
+
+    header label {
+        display: block;
+    }
+    .menu {
+        position: absolute;
+        background:  rosybrown;
+        width: 70%;
+        margin-left: -80%;
+        transition: all 0.5s;
+        ul {
+            flex-direction: column;
+        }
+        li {
+            border-top: 1px solid white;
+        }
+    }
+    #btn-menu:checked ~ .menu {
+        margin: 0 -4%;
+    }
+    #btn-menu:checked ~ label {
+        background: gray;
+    }
+
+    /*backgrund*/
+    .foto {
+        position: absolute;
+        top: 15%;
+        left: 30%;
+        display: flex;
+        width: 50vw;
+        height: 25vh;
+        border-radius: 50%;
+        border: 5px solid white;
+    }
+    
+}

@@ -1,0 +1,129 @@
+*{
+    margin: 0px;
+    padding: 0px;  
+    background: transparent;
+    text-decoration: none;
+}    
+img {
+    width: 260px;
+    height: 260px;
+}
+body {
+    text-align: center; 
+}
+
+
+/*Texto*/
+h2 {
+    font-family: 'Lexend Zetta', sans-serif;
+    background-color: black;
+    color: white;
+    padding: 12px;
+}
+p {
+    font-family: 'Open Sans', sans-serif;
+    padding: 20px 50px;
+    line-height: 25px
+}
+.text {
+    width: 79.5%;
+    margin-left: 20.5%;
+    text-align: justify;
+}    
+ul{
+    font-family: 'Open Sans', sans-serif;
+    /*list-style: none;*/
+}
+a {
+    color: white;
+}
+
+
+ /*Cabecera*/
+header {
+    background-image: url("images/fondo.jpg");
+    background-repeat: repeat-x;
+}
+.titulo > h1 > img {
+    padding-bottom: 21px;
+    width: 789px;
+    height: 148px;
+}
+.cabecera {
+    height: 28rem;
+}
+
+
+/*Nav*/
+nav {
+    text-align: left;
+    float: left;
+    width: 19%; /*Aqui ocurre la mágia*/
+    height: 39.05rem;
+    position: sticky;
+    top: 0;
+    background-image: url(/images//fondo.jpg);
+    background-size:100% ;
+    background-attachment: fixed ;
+}
+.menu > li > a {
+    display: block;
+    background: transparent;
+    padding: 8px 2rem;   
+    color: white;
+}
+.menu > li a:hover {
+    background-color: black;
+    opacity: 0.6;
+    color: white;
+}
+
+
+/*Discografia*/
+.album > li {
+    display: inline-block;
+}
+ul.album > li > p {
+    position: relative;
+    text-align: center;
+}
+.album > li > img {
+    padding: 40px 40px 10px 40px ;  
+}
+.album > li > img:hover {
+    opacity: 0.5;
+}
+
+
+/*Spotify*/
+.spotify {
+    width: 420px;
+    height: 470px;
+    padding: 30px 3em;
+    border-style: hidden;
+}
+
+
+/*Footer*/
+footer {
+    background-color: black;
+    border-top: 1px solid #FFC300;
+    position: absolute;
+    width: 100%;
+}
+.social-media > li {
+    display: inline-block;
+    margin: 10px;
+}
+.enlace {
+    padding: 10px;
+}
+.enlace > input {
+    padding: 10px 70px;
+    background-color: #151519;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid white;
+    font-family: 'Lexend Zetta', sans-serif;
+}
+
